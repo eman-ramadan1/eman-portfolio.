@@ -5,38 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
 
-  <!-- ✅ CSS خاص بالـ header و footer فقط -->
+  
   <style>
     header {
       background-color: #2c3e50;
-      color: white;
+       background-image: linear-gradient(to right, rgb(5, 41, 92) , rgb(59, 107, 144)); 
+      color: rgb(255, 255, 255);
       padding: 20px;
       text-align: center;
+     
+    height:500px;
     }
 
     header h1 {
       margin: 0;
       font-size: 32px;
+      padding-top: 200px;
     }
     nav a{ 
       color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 20px;
+      padding-top: 0;
     }
+    nav {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+    
+    
 
     footer {
       background-color: #2c3e50;
+      background-image: linear-gradient(to right, rgb(5, 41, 92) , rgb(59, 107, 144)); 
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 40px;
       margin-top: 40px;
+      height: 150px;
+      padding-top: 100px;
     }
+
 
     footer p {
       margin: 5px 0;
       font-size: 14px;
+      text-align: center;
     }
   </style>
 </head>
@@ -45,15 +63,18 @@
 
   <!--  Header -->
   <header>
-    <h1><i class="fas fa-user"></i> Eman Ramadan's Portfolio</h1>
- <p>Flutter-app develober</p>
+    
     <!-- Navbar -->
-  <nav>
-    <a href="#about">about</a> |
-    <a href="#skills">skills</a> |
-    <a href="#projects">projects</a> |
-    <a href="#contact">contact</a> |
+  <nav >
+    <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="skills">My Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact </a></li>
+            </ul>
   </nav>
+  <h1 ><i class="fas fa-user"></i> Eman Ramadan's Portfolio</h1>
+ <p>Flutter-app develober</p>
   </header>
 
   <!-- 
@@ -67,7 +88,7 @@ Navbar -->
   <hr/>
 
   <!--  About Section -->
-  <section id="about">
+  <section  class="card">
     <h2>About Me</h2>
     <p><strong>Name:</strong> Eman Ramadan Abdelzaher</p>
     <p><strong>Education :</strong> student at FCAI </p>
@@ -78,20 +99,22 @@ Navbar -->
   <hr/>
 
   <!--  Skills Section -->
-  <section id="skills">
+  <section  class="card" id="skills">
     <h2>My Skills</h2>
-    <ul>
+    <ul >
+      <li> C++</li>
       <li>HTML</li>
       <li>CSS</li>
       <li>Dart</li>
       <li>Flutter</li>
+      <li> team work</li>
     </ul>
   </section>
 
   <hr/>
 
   <!--  Projects Section -->
-  <section id="projects">
+  <section id="projects" class="card"  >
     <h2>Projects</h2>
     <ol>
       <li>
@@ -113,8 +136,8 @@ Navbar -->
 
   <hr/>
 
-  <!-- ✅ Contact Form -->
-  <section id="contact">
+  <!-- Contact Form -->
+  <section id="contact" class="card">
     <h2>Contact Me</h2>
     <form>
       <label for="name">Name:</label>
@@ -130,7 +153,7 @@ Navbar -->
     </form>
   </section>
 
-  <!-- ✅ Footer -->
+  <!--  Footer -->
   <footer>
     <p>&copy; 2025 Eman Ramadan. All rights reserved.</p>
     <p><i class="fas fa-envelope"></i> er1337@fayoum.edu.eg</p>
